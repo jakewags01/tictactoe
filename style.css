@@ -1,0 +1,38 @@
+:root {
+    --white: #f6f6f6;
+    --black: #020202;
+    --grey: #303030;
+}
+
+body {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+header, main {
+    font-family: 'Caveat', cursive;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#github {
+    height: auto;
+    width: 20px;
+    filter: invert(100%) sepia(34%) saturate(368%) hue-rotate(203deg) brightness(120%) contrast(93%);
+    transition: all 0.2s;
+}
+
+#github:hover {
+    transform: rotate(360deg);
+    width: 25px;
+    margin-left: -5px;
+}
